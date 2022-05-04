@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_11jqhdz" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.0.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.17.0">
+  <bpmn:process id="call_best_friend" name="Call Best Friend" isExecutable="true">
+    <bpmn:startEvent id="Event_0fas5j4">
+      <bpmn:outgoing>Flow_1w09nyq</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:sequenceFlow id="Flow_1w09nyq" sourceRef="Event_0fas5j4" targetRef="Activity_16qnz5c" />
+    <bpmn:endEvent id="Event_1f5b0rz">
+      <bpmn:incoming>Flow_0mwsnr3</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0mwsnr3" sourceRef="Activity_16qnz5c" targetRef="Event_1f5b0rz" />
+    <bpmn:userTask id="Activity_16qnz5c" name="Call Best Friend">
+      <bpmn:incoming>Flow_1w09nyq</bpmn:incoming>
+      <bpmn:outgoing>Flow_0mwsnr3</bpmn:outgoing>
+    </bpmn:userTask>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="call_best_friend">
+      <bpmndi:BPMNEdge id="Flow_1w09nyq_di" bpmnElement="Flow_1w09nyq">
+        <di:waypoint x="188" y="80" />
+        <di:waypoint x="240" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0mwsnr3_di" bpmnElement="Flow_0mwsnr3">
+        <di:waypoint x="340" y="80" />
+        <di:waypoint x="392" y="80" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_0fas5j4_di" bpmnElement="Event_0fas5j4">
+        <dc:Bounds x="152" y="62" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1f5b0rz_di" bpmnElement="Event_1f5b0rz">
+        <dc:Bounds x="392" y="62" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_15t7ybw_di" bpmnElement="Activity_16qnz5c">
+        <dc:Bounds x="240" y="40" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
