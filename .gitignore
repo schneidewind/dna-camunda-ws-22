@@ -1,6 +1,0 @@
-#build output
-/target
-/.vscode
-
-#db files 
-*.db
